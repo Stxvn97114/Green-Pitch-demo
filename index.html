@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GREEN PITCH - Association sportive multi-sports à Saint-Claude, Guadeloupe. Football, Tennis, Natation, Volleyball, Basketball, Athlétisme et Jeux Vidéo.">
+    <title>GREEN PITCH - Association Sportive Multi-Sports</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to main content link for keyboard accessibility -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <header role="banner">
+        <nav class="container" role="navigation" aria-label="Navigation principale">
+            <a href="#accueil" onclick="showPage('accueil'); return false;" class="logo" aria-label="GREEN PITCH - Retour à l'accueil">
+                <img src="green pitch.png" alt="Logo GREEN PITCH - Association sportive">
+            </a>
+            <div class="nav-links" id="nav-menu">
+                <a href="#accueil" onclick="showPage('accueil'); return false;" class="nav-link active" data-page="accueil">
+                    <span class="lang" data-fr="Accueil" data-en="Home">Accueil</span>
+                </a>
+                <a href="#sports" onclick="showPage('sports'); return false;" class="nav-link" data-page="sports">
+                    <span class="lang" data-fr="Nos Sports" data-en="Our Sports">Nos Sports</span>
+                </a>
+                <a href="#valeurs" onclick="showPage('valeurs'); return false;" class="nav-link" data-page="valeurs">
+                    <span class="lang" data-fr="Nos Valeurs" data-en="Our Values">Nos Valeurs</span>
+                </a>
+                <a href="#equipes" onclick="showPage('equipes'); return false;" class="nav-link" data-page="equipes">
+                    <span class="lang" data-fr="Nos Équipes" data-en="Our Teams">Nos Équipes</span>
+                </a>
+                <a href="#jeux" onclick="showPage('jeux'); return false;" class="nav-link" data-page="jeux">
+                    <span class="lang" data-fr="Jeux Vidéo" data-en="Video Games">Jeux Vidéo</span>
+                </a>
+                <a href="#actualites" onclick="showPage('actualites'); return false;" class="nav-link" data-page="actualites">
+                    <span class="lang" data-fr="Actualités" data-en="News">Actualités</span>
+                </a>
+                <a href="#contact" onclick="showPage('contact'); return false;" class="nav-link" data-page="contact">
+                    <span class="lang" data-fr="Contact" data-en="Contact">Contact</span>
+                </a>
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Basculer entre le mode sombre et le mode clair">
+                    <i class="fa-solid fa-sun" id="theme-icon" aria-hidden="true"></i>
+                    <span id="theme-text" class="lang" data-fr="Mode Clair" data-en="Light Mode">Mode Clair</span>
+                </button>
+                <div class="lang-switcher" role="group" aria-label="Sélection de la langue">
+                    <button class="lang-btn active" onclick="switchLang('fr'); return false;" aria-label="Basculer en français" aria-pressed="true">FR</button>
+                    <button class="lang-btn" onclick="switchLang('en'); return false;" aria-label="Switch to English" aria-pressed="false">EN</button>
+                </div>
+            </div>
+            <button class="burger" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="nav-menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- PAGE ACCUEIL -->
+        <div class="page-content active" id="page-accueil">
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="container">
+                    <h1 id="hero-title">
+                        GREEN PITCH<br>
+                        <span class="lang" data-fr="Une famille, une passion" data-en="One family, one passion">Une famille, une passion</span>
+                    </h1>
+                    <p class="hero-subtitle lang" data-fr="Association sportive multi-sports à Saint-Claude, Guadeloupe" data-en="Multi-sport association in Saint-Claude, Guadeloupe">
+                        Association sportive multi-sports à Saint-Claude, Guadeloupe
+                    </p>
+                    <a href="#contact" onclick="showPage('contact'); return false;" class="btn">
+                        <span class="lang" data-fr="Rejoindre le club" data-en="Join the club">Rejoindre le club</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="video-banner" aria-labelledby="video-section-title">
+                <div class="container">
+                    <div class="video-content">
+                        <div class="video-text">
+                            <h2 id="video-section-title">
+                                <i class="fa-solid fa-star" aria-hidden="true"></i> 
+                                <span class="lang" data-fr="À tous les jeunes passionnés de sport" data-en="To all young sports enthusiasts">À tous les jeunes passionnés de sport</span>
+                            </h2>
+                            <p class="lang" data-fr="Rejoignez notre association ! Regardez cette vidéo et croyez en vos rêves." data-en="Join our association! Watch this video and believe in your dreams.">
+                                Rejoignez notre association ! Regardez cette vidéo et <strong>croyez en vos rêves</strong>.
+                            </p>
+                        </div>
+                        <div>
+                            <a href="https://www.youtube.com/watch?v=43BzAwwziJY" target="_blank" rel="noopener noreferrer" class="video-box" aria-label="Regarder la vidéo de motivation sportive sur YouTube (nouvelle fenêtre)">
+                                <div class="video-thumb">
+                                    <img src="https://img.youtube.com/vi/43BzAwwziJY/maxresdefault.jpg" alt="Vignette de la vidéo de motivation sportive">
+                                    <div class="play-btn" aria-hidden="true">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE NOS SPORTS -->
+        <div class="page-content" id="page-sports">
+            <section class="section-padding" aria-labelledby="sports-title">
+                <div class="container">
+                    <h1 id="sports-title" class="section-title">
+                        <span class="lang" data-fr="Nos Sports" data-en="Our Sports">Nos Sports</span>
+                    </h1>
+                    <p class="intro-text lang" data-fr="GREEN PITCH propose une large gamme d'activités sportives pour tous les âges et tous les niveaux. Cliquez sur un sport pour découvrir les détails." data-en="GREEN PITCH offers a wide range of sports activities for all ages and levels. Click on a sport to discover the details.">
+                        GREEN PITCH propose une large gamme d'activités sportives pour tous les âges et tous les niveaux. Cliquez sur un sport pour découvrir les détails.
+                    </p>
+                    
+                    <!-- Vue d'ensemble des sports -->
+                    <div class="sports-grid" id="sports-overview">
+                        <a href="#football" onclick="showSportDetail('football'); return false;" class="card" aria-label="En savoir plus sur le football">
+                            <i class="fa-solid fa-futbol" aria-hidden="true"></i>
+                            <h2 class="lang" data-fr="Football" data-en="Soccer">Football</h2>
+                            <p class="lang" data-fr="Le sport collectif par excellence. De l'école de foot aux équipes seniors." data-en="The ultimate team sport. From youth academy to senior teams.">
+                                Le sport collectif par excellence. De l'école de foot aux équipes seniors.
+                            </p>
+                        </a>
+                        <a href="#tennis" onclick="showSportDetail('tennis'); return false;" class="card" aria-label="En savoir plus sur le tennis">
+                            <i class="fa-solid fa-table-tennis-paddle-ball" aria-hidden="true"></i>
+                            <h2 class="lang" data-fr="Tennis" data-en="Tennis">Tennis</h2>
+                            <p class="lang" data-fr="Sport de raquette alliant technique, tactique et condition physique." data-en="Racket sport combining technique, tactics and physical fitness.">
+                                Sport de raquette alliant technique, tactique et condition physique.
+                            </p>
+                        </a>
+                        <a href="#natation" onclick="showSportDetail('natation'); return false;" class="card" aria-label="En savoir plus sur la natation">
+                            <i class="fa-solid fa-person-swimming" aria-hidden="true"></i>
+                            <h2 class="lang" data-fr="Natation" data-en="Swimming">Natation</h2>
+                            <p class="lang" data-fr="Sport complet pour tous. Apprentissage des 4 nages." data-en="Complete sport for everyone. Learning all 4 strokes.">
+                                Sport complet pour tous. Apprentissage des 4 nages.
+                            </p>
+                        </a>
+                        <a href="#volleyball" onclick="showSportDetail('volleyball'); return false;" class="card" aria-label="En savoir plus sur le volleyball">
+                            <i class="fa-solid fa-volleyball" aria-hidden="true"></i>
+                            <h2 class="lang" data-fr="Volleyball" data-en="Volleyball">Volleyball</h2>
+                            <p class="lang" data-fr="Jeu collectif dynamique. Développez vos réflexes." data-en="Dynamic team game. Develop your reflexes.">
+                                Jeu collectif dynamique. Développez vos réflexes.
+                            </p>
+                        </a>
+                        <a href="#basketball" onclick="showSportDetail('basketball'); return false;" class="card" aria-label="En savoir plus sur le basketball">
+                            <i class="fa-solid fa-basketball" aria-hidden="true"></i>
+                            <h2 class="lang" data-fr="Basketball" data-en="Basketball">Basketball</h2>
+                            <p class="lang" data-fr="Sport américain spectaculaire. Technique et vitesse." data-en="Spectacular American sport. Technique and speed.">
+                                Sport américain spectaculaire. Technique et vitesse.
+                            </p>
+                        </a>
+                        <a href="#athletisme" onclick="showSportDetail('athletisme'); return false;" class="card" aria-label="En savoir plus sur l'athlétisme">
+                            <i class="fa-solid fa-person-running" aria-hidden="true"></i>
+                            <h2 class="lang" data-fr="Athlétisme" data-en="Athletics">Athlétisme</h2>
+                            <p class="lang" data-fr="Lancers (poids, disque, javelot). Puissance et technique." data-en="Throws (shot put, discus, javelin). Power and technique.">
+                                Lancers (poids, disque, javelot). Puissance et technique.
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- Détails Football -->
+                    <article class="sport-detail" id="sport-football" style="display: none;" aria-labelledby="football-detail-title">
+                        <h1 id="football-detail-title" class="section-title">
+                            ⚽ <span class="lang" data-fr="Football" data-en="Soccer">Football</span>
+                        </h1>
+                        <div class="intro-box">
+                            <div class="icon"><i class="fa-solid fa-futbol" aria-hidden="true"></i></div>
+                            <h2 class="lang" data-fr="Le Sport Roi" data-en="The King of Sports">Le Sport Roi</h2>
+                            <p class="lang" data-fr="Le football est un sport collectif qui oppose deux équipes de onze joueurs. L'objectif est de marquer plus de buts que l'adversaire en utilisant principalement les pieds." data-en="Soccer is a team sport between two teams of eleven players. The goal is to score more goals than the opponent using mainly the feet.">
+                                Le football est un sport collectif qui oppose deux équipes de onze joueurs. L'objectif est de marquer plus de buts que l'adversaire en utilisant principalement les pieds.
+                            </p>
+                        </div>
+                        <div class="values-grid">
+                            <div class="card">
+                                <i class="fa-solid fa-book" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Règles principales" data-en="Main Rules">Règles principales</h3>
+                                <p class="lang" data-fr="Match de 2x45 minutes, terrain 100-110m, ballon 410-450g. Hors-jeu, fautes, cartons." data-en="Match of 2x45 minutes, field 100-110m, ball 410-450g. Offside, fouls, cards.">
+                                    Match de 2x45 minutes, terrain 100-110m, ballon 410-450g. Hors-jeu, fautes, cartons.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Condition physique" data-en="Physical Fitness">Condition physique</h3>
+                                <p class="lang" data-fr="Endurance cardiovasculaire, vitesse, explosivité, agilité et coordination." data-en="Cardiovascular endurance, speed, explosiveness, agility and coordination.">
+                                    Endurance cardiovasculaire, vitesse, explosivité, agilité et coordination.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-clipboard-list" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Compétences" data-en="Skills">Compétences</h3>
+                                <p class="lang" data-fr="Contrôle ballon, passes, dribbles, tirs, jeu de tête, vision tactique." data-en="Ball control, passes, dribbles, shots, heading, tactical vision.">
+                                    Contrôle ballon, passes, dribbles, tirs, jeu de tête, vision tactique.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-users" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Esprit d'équipe" data-en="Team Spirit">Esprit d'équipe</h3>
+                                <p class="lang" data-fr="Communication, entraide, cohésion collective et fair-play." data-en="Communication, mutual aid, team cohesion and fair play.">
+                                    Communication, entraide, cohésion collective et fair-play.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="video-banner">
+                            <div class="container">
+                                <div class="video-content">
+                                    <div class="video-text">
+                                        <h2>
+                                            <i class="fa-solid fa-star" aria-hidden="true"></i> 
+                                            <span class="lang" data-fr="À tous les jeunes passionnés de football" data-en="To all young football enthusiasts">À tous les jeunes passionnés de football</span>
+                                        </h2>
+                                        <p class="lang" data-fr="Regardez cette vidéo et croyez en vos rêves." data-en="Watch this video and believe in your dreams.">
+                                            Regardez cette vidéo et <strong>croyez en vos rêves</strong>.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.youtube.com/watch?v=SusiqEN2Y4w" target="_blank" rel="noopener noreferrer" class="video-box" aria-label="Regarder la vidéo de motivation football sur YouTube (nouvelle fenêtre)">
+                                            <div class="video-thumb">
+                                                <img src="https://img.youtube.com/vi/SusiqEN2Y4w/maxresdefault.jpg" alt="Vignette de la vidéo de motivation football">
+                                                <div class="play-btn" aria-hidden="true"><i class="fa-brands fa-youtube"></i></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="back-button-container">
+                            <a href="#sports" onclick="showSportsOverview(); return false;" class="btn">
+                                ← <span class="lang" data-fr="Retour aux sports" data-en="Back to sports">Retour aux sports</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Détails Tennis -->
+                    <article class="sport-detail" id="sport-tennis" style="display: none;" aria-labelledby="tennis-detail-title">
+                        <h1 id="tennis-detail-title" class="section-title">
+                            🎾 <span class="lang" data-fr="Tennis" data-en="Tennis">Tennis</span>
+                        </h1>
+                        <div class="intro-box">
+                            <div class="icon"><i class="fa-solid fa-table-tennis-paddle-ball" aria-hidden="true"></i></div>
+                            <h2 class="lang" data-fr="Sport de Raquette" data-en="Racket Sport">Sport de Raquette</h2>
+                            <p class="lang" data-fr="Le tennis oppose deux joueurs (simple) ou quatre joueurs en deux équipes (double). Les joueurs utilisent une raquette pour frapper une balle par-dessus un filet." data-en="Tennis is played between two players (singles) or four players in two teams (doubles). Players use a racket to hit a ball over a net.">
+                                Le tennis oppose deux joueurs (simple) ou quatre joueurs en deux équipes (double). Les joueurs utilisent une raquette pour frapper une balle par-dessus un filet.
+                            </p>
+                        </div>
+                        <div class="values-grid">
+                            <div class="card">
+                                <i class="fa-solid fa-book" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Règles principales" data-en="Main Rules">Règles principales</h3>
+                                <p class="lang" data-fr="Terrain 23,77m, comptage 15-30-40-jeu, meilleur de 3 ou 5 sets, tie-break à 6-6." data-en="Court 23.77m, scoring 15-30-40-game, best of 3 or 5 sets, tie-break at 6-6.">
+                                    Terrain 23,77m, comptage 15-30-40-jeu, meilleur de 3 ou 5 sets, tie-break à 6-6.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Condition physique" data-en="Physical Fitness">Condition physique</h3>
+                                <p class="lang" data-fr="Endurance aérobie, explosivité, vitesse de réaction, souplesse articulaire." data-en="Aerobic endurance, explosiveness, reaction speed, joint flexibility.">
+                                    Endurance aérobie, explosivité, vitesse de réaction, souplesse articulaire.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-clipboard-list" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Compétences" data-en="Skills">Compétences</h3>
+                                <p class="lang" data-fr="Services variés, coup droit, revers, volée, smash, amorti." data-en="Various serves, forehand, backhand, volley, smash, drop shot.">
+                                    Services variés, coup droit, revers, volée, smash, amorti.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-brain" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Mental" data-en="Mental">Mental</h3>
+                                <p class="lang" data-fr="Concentration, gestion du stress, stratégie de jeu, résistance mentale." data-en="Concentration, stress management, game strategy, mental toughness.">
+                                    Concentration, gestion du stress, stratégie de jeu, résistance mentale.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="video-banner">
+                            <div class="container">
+                                <div class="video-content">
+                                    <div class="video-text">
+                                        <h2>
+                                            <i class="fa-solid fa-star" aria-hidden="true"></i> 
+                                            <span class="lang" data-fr="À tous les jeunes passionnés de tennis" data-en="To all young tennis enthusiasts">À tous les jeunes passionnés de tennis</span>
+                                        </h2>
+                                        <p class="lang" data-fr="Regardez cette vidéo et croyez en vos rêves." data-en="Watch this video and believe in your dreams.">
+                                            Regardez cette vidéo et <strong>croyez en vos rêves</strong>.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.youtube.com/watch?v=6uPeNYOnS3k" target="_blank" rel="noopener noreferrer" class="video-box" aria-label="Regarder la vidéo de motivation athlétisme sur YouTube (nouvelle fenêtre)">
+                                            <div class="video-thumb">
+                                                <img src="tennis.png" alt="Vignette de la vidéo de motivation athlétisme">
+                                                <div class="play-btn" aria-hidden="true"><i class="fa-brands fa-youtube"></i></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back-button-container">
+                            <a href="#sports" onclick="showSportsOverview(); return false;" class="btn">
+                                ← <span class="lang" data-fr="Retour aux sports" data-en="Back to sports">Retour aux sports</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Détails Natation -->
+                    <article class="sport-detail" id="sport-natation" style="display: none;" aria-labelledby="natation-detail-title">
+                        <h1 id="natation-detail-title" class="section-title">
+                            🏊 <span class="lang" data-fr="Natation" data-en="Swimming">Natation</span>
+                        </h1>
+                        <div class="intro-box">
+                            <div class="icon"><i class="fa-solid fa-person-swimming" aria-hidden="true"></i></div>
+                            <h2 class="lang" data-fr="Sport Aquatique Complet" data-en="Complete Aquatic Sport">Sport Aquatique Complet</h2>
+                            <p class="lang" data-fr="La natation consiste à se déplacer dans l'eau en utilisant différentes techniques de nage. Sport complet par excellence." data-en="Swimming consists of moving through water using different swimming techniques. The complete sport par excellence.">
+                                La natation consiste à se déplacer dans l'eau en utilisant différentes techniques de nage. Sport complet par excellence.
+                            </p>
+                        </div>
+                        <div class="values-grid">
+                            <div class="card">
+                                <i class="fa-solid fa-book" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Les 4 nages" data-en="The 4 strokes">Les 4 nages</h3>
+                                <p class="lang" data-fr="Crawl, dos crawlé, brasse, papillon. Distances de 50m à 1500m." data-en="Freestyle, backstroke, breaststroke, butterfly. Distances from 50m to 1500m.">
+                                    Crawl, dos crawlé, brasse, papillon. Distances de 50m à 1500m.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Condition physique" data-en="Physical Fitness">Condition physique</h3>
+                                <p class="lang" data-fr="Capacité pulmonaire, endurance musculaire, souplesse, gainage." data-en="Lung capacity, muscular endurance, flexibility, core strength.">
+                                    Capacité pulmonaire, endurance musculaire, souplesse, gainage.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-clipboard-list" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Compétences" data-en="Skills">Compétences</h3>
+                                <p class="lang" data-fr="Maîtrise des 4 nages, plongeon, virages, coulées." data-en="Mastery of 4 strokes, diving, turns, underwater phases.">
+                                    Maîtrise des 4 nages, plongeon, virages, coulées.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-water" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Aisance aquatique" data-en="Water Comfort">Aisance aquatique</h3>
+                                <p class="lang" data-fr="Flottabilité, respiration contrôlée, position hydrodynamique." data-en="Buoyancy, controlled breathing, hydrodynamic position.">
+                                    Flottabilité, respiration contrôlée, position hydrodynamique.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="video-banner">
+                            <div class="container">
+                                <div class="video-content">
+                                    <div class="video-text">
+                                        <h2>
+                                            <i class="fa-solid fa-star" aria-hidden="true"></i> 
+                                            <span class="lang" data-fr="À tous les jeunes passionnés de natation" data-en="To all young swimming enthusiasts">À tous les jeunes passionnés de natation</span>
+                                        </h2>
+                                        <p class="lang" data-fr="Regardez cette vidéo et croyez en vos rêves." data-en="Watch this video and believe in your dreams.">
+                                            Regardez cette vidéo et <strong>croyez en vos rêves</strong>.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.youtube.com/watch?v=mIWVSV4GuQA" target="_blank" rel="noopener noreferrer" class="video-box" aria-label="Regarder la vidéo de motivation natation sur YouTube (nouvelle fenêtre)">
+                                            <div class="video-thumb">
+                                                <img src="https://img.youtube.com/vi/mIWVSV4GuQA/maxresdefault.jpg" alt="Vignette de la vidéo de motivation natation">
+                                                <div class="play-btn" aria-hidden="true"><i class="fa-brands fa-youtube"></i></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="back-button-container">
+                            <a href="#sports" onclick="showSportsOverview(); return false;" class="btn">
+                                ← <span class="lang" data-fr="Retour aux sports" data-en="Back to sports">Retour aux sports</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Détails Volleyball -->
+                    <article class="sport-detail" id="sport-volleyball" style="display: none;" aria-labelledby="volleyball-detail-title">
+                        <h1 id="volleyball-detail-title" class="section-title">
+                            🏐 <span class="lang" data-fr="Volleyball" data-en="Volleyball">Volleyball</span>
+                        </h1>
+                        <div class="intro-box">
+                            <div class="icon"><i class="fa-solid fa-volleyball" aria-hidden="true"></i></div>
+                            <h2 class="lang" data-fr="Sport Collectif Dynamique" data-en="Dynamic Team Sport">Sport Collectif Dynamique</h2>
+                            <p class="lang" data-fr="Le volleyball oppose deux équipes de six joueurs séparées par un filet. Maximum trois touches par équipe." data-en="Volleyball is played between two teams of six players separated by a net. Maximum three touches per team.">
+                                Le volleyball oppose deux équipes de six joueurs séparées par un filet. Maximum trois touches par équipe.
+                            </p>
+                        </div>
+                        <div class="values-grid">
+                            <div class="card">
+                                <i class="fa-solid fa-book" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Règles principales" data-en="Main Rules">Règles principales</h3>
+                                <p class="lang" data-fr="Terrain 18x9m, filet 2,43m (H) / 2,24m (F), sets de 25 points." data-en="Court 18x9m, net 2.43m (M) / 2.24m (F), sets to 25 points.">
+                                    Terrain 18x9m, filet 2,43m (H) / 2,24m (F), sets de 25 points.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Condition physique" data-en="Physical Fitness">Condition physique</h3>
+                                <p class="lang" data-fr="Détente verticale, explosivité, réflexes, agilité." data-en="Vertical jump, explosiveness, reflexes, agility.">
+                                    Détente verticale, explosivité, réflexes, agilité.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-clipboard-list" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Compétences" data-en="Skills">Compétences</h3>
+                                <p class="lang" data-fr="Service, manchette, passe touche, attaque (spike), contre (block)." data-en="Serve, bump, set, attack (spike), block.">
+                                    Service, manchette, passe touche, attaque (spike), contre (block).
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Communication" data-en="Communication">Communication</h3>
+                                <p class="lang" data-fr="Coordination d'équipe, appels, positionnement stratégique." data-en="Team coordination, calls, strategic positioning.">
+                                    Coordination d'équipe, appels, positionnement stratégique.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="back-button-container">
+                            <a href="#sports" onclick="showSportsOverview(); return false;" class="btn">
+                                ← <span class="lang" data-fr="Retour aux sports" data-en="Back to sports">Retour aux sports</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Détails Basketball -->
+                    <article class="sport-detail" id="sport-basketball" style="display: none;" aria-labelledby="basketball-detail-title">
+                        <h1 id="basketball-detail-title" class="section-title">
+                            🏀 <span class="lang" data-fr="Basketball" data-en="Basketball">Basketball</span>
+                        </h1>
+                        <div class="intro-box">
+                            <div class="icon"><i class="fa-solid fa-basketball" aria-hidden="true"></i></div>
+                            <h2 class="lang" data-fr="Sport Américain Spectaculaire" data-en="Spectacular American Sport">Sport Américain Spectaculaire</h2>
+                            <p class="lang" data-fr="Le basketball oppose deux équipes de cinq joueurs. Marquer des points en lançant le ballon dans le panier adverse." data-en="Basketball is played between two teams of five players. Score points by shooting the ball into the opponent's basket.">
+                                Le basketball oppose deux équipes de cinq joueurs. Marquer des points en lançant le ballon dans le panier adverse.
+                            </p>
+                        </div>
+                        <div class="values-grid">
+                            <div class="card">
+                                <i class="fa-solid fa-book" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Règles principales" data-en="Main Rules">Règles principales</h3>
+                                <p class="lang" data-fr="Terrain 28x15m, 4 périodes de 10 min, 2-3 points selon position." data-en="Court 28x15m, 4 periods of 10 min, 2-3 points depending on position.">
+                                    Terrain 28x15m, 4 périodes de 10 min, 2-3 points selon position.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Condition physique" data-en="Physical Fitness">Condition physique</h3>
+                                <p class="lang" data-fr="Détente verticale, vitesse, endurance, agilité." data-en="Vertical jump, speed, endurance, agility.">
+                                    Détente verticale, vitesse, endurance, agilité.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-clipboard-list" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Compétences" data-en="Skills">Compétences</h3>
+                                <p class="lang" data-fr="Dribble, tir, passe, défense, rebond, pivot." data-en="Dribbling, shooting, passing, defense, rebounding, pivot.">
+                                    Dribble, tir, passe, défense, rebond, pivot.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Vision de jeu" data-en="Game Vision">Vision de jeu</h3>
+                                <p class="lang" data-fr="Lecture des situations, anticipation, intelligence tactique." data-en="Reading situations, anticipation, tactical intelligence.">
+                                    Lecture des situations, anticipation, intelligence tactique.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="video-banner">
+                            <div class="container">
+                                <div class="video-content">
+                                    <div class="video-text">
+                                        <h2>
+                                            <i class="fa-solid fa-star" aria-hidden="true"></i> 
+                                            <span class="lang" data-fr="À tous les jeunes passionnés de basketball" data-en="To all young basketball enthusiasts">À tous les jeunes passionnés de basketball</span>
+                                        </h2>
+                                        <p class="lang" data-fr="Regardez cette vidéo et croyez en vos rêves." data-en="Watch this video and believe in your dreams.">
+                                            Regardez cette vidéo et <strong>croyez en vos rêves</strong>.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.youtube.com/watch?v=DGJmK1ulV1g" target="_blank" rel="noopener noreferrer" class="video-box" aria-label="Regarder la vidéo de motivation basketball sur YouTube (nouvelle fenêtre)">
+                                            <div class="video-thumb">
+                                                <img src="https://img.youtube.com/vi/DGJmK1ulV1g/maxresdefault.jpg" alt="Vignette de la vidéo de motivation basketball">
+                                                <div class="play-btn" aria-hidden="true"><i class="fa-brands fa-youtube"></i></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="back-button-container">
+                            <a href="#sports" onclick="showSportsOverview(); return false;" class="btn">
+                                ← <span class="lang" data-fr="Retour aux sports" data-en="Back to sports">Retour aux sports</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Détails Athlétisme -->
+                    <article class="sport-detail" id="sport-athletisme" style="display: none;" aria-labelledby="athletisme-detail-title">
+                        <h1 id="athletisme-detail-title" class="section-title">
+                            🏃 <span class="lang" data-fr="Athlétisme" data-en="Athletics">Athlétisme</span>
+                        </h1>
+                        <div class="intro-box">
+                            <div class="icon"><i class="fa-solid fa-person-running" aria-hidden="true"></i></div>
+                            <h2 class="lang" data-fr="Les Disciplines" data-en="Disciplines">Les Disciplines</h2>
+                            <p class="lang" data-fr="L'athlétisme regroupe différents catégories de course : 100M, 110M haies et beaucoup d'autres. Force, technique et coordination." data-en="Athletics includes various running events: 100m, 110m hurdles, and many others. Strength, technique, and coordination.">
+                                L'athlétisme regroupe différents catégories de course : 100M, 110M haies et beaucoup d'autres. Force, technique et coordination.
+                            </p>
+                        </div>
+                        <div class="values-grid">
+                            <div class="card">
+                                <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="100M" data-en="100 M">100 M</h3>
+                                <p class="lang" data-fr="Développez votre explosivité et puissance." data-en="Develop your explosiveness and power.">
+                                    Développez votre explosivité et puissance.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-compact-disc" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="110M haies" data-en="110M Hurdles">110M haies</h3>
+                                <p class="lang" data-fr="Maîtrisez le saut et l'explosivité" data-en="Master jumping and explosiveness.">
+                                    Maîtrisez le saut et l'explosivité.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-location-arrow" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Lancer de Javelot" data-en="Javelin Throw">Lancer de Javelot</h3>
+                                <p class="lang" data-fr="Combinez vitesse, coordination et technique." data-en="Combine speed, coordination and technique.">
+                                    Combinez vitesse, coordination et technique.
+                                </p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                                <h3 class="lang" data-fr="Force et Puissance" data-en="Strength and Power">Force et Puissance</h3>
+                                <p class="lang" data-fr="Renforcement musculaire, explosivité, technique spécifique." data-en="Muscle strengthening, explosiveness, specific technique.">
+                                    Renforcement musculaire, explosivité, technique spécifique.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="video-banner">
+                            <div class="container">
+                                <div class="video-content">
+                                    <div class="video-text">
+                                        <h2>
+                                            <i class="fa-solid fa-star" aria-hidden="true"></i> 
+                                            <span class="lang" data-fr="À tous les jeunes passionnés d'athlétisme" data-en="To all young athletics enthusiasts">À tous les jeunes passionnés d'athlétisme</span>
+                                        </h2>
+                                        <p class="lang" data-fr="Regardez cette vidéo et croyez en vos rêves." data-en="Watch this video and believe in your dreams.">
+                                            Regardez cette vidéo et <strong>croyez en vos rêves</strong>.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.youtube.com/watch?v=V08jidA8Amk" target="_blank" rel="noopener noreferrer" class="video-box" aria-label="Regarder la vidéo de motivation athlétisme sur YouTube (nouvelle fenêtre)">
+                                            <div class="video-thumb">
+                                                <img src="https://img.youtube.com/vi/V08jidA8Amk/maxresdefault.jpg" alt="Vignette de la vidéo de motivation athlétisme">
+                                                <div class="play-btn" aria-hidden="true"><i class="fa-brands fa-youtube"></i></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="back-button-container">
+                            <a href="#sports" onclick="showSportsOverview(); return false;" class="btn">
+                                ← <span class="lang" data-fr="Retour aux sports" data-en="Back to sports">Retour aux sports</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE NOS VALEURS -->
+        <div class="page-content" id="page-valeurs">
+            <section class="section-padding" aria-labelledby="valeurs-title">
+                <div class="container">
+                    <h1 id="valeurs-title" class="section-title">
+                        <span class="lang" data-fr="Nos Valeurs" data-en="Our Values">Nos Valeurs</span>
+                    </h1>
+                    <p class="intro-text lang" data-fr="Fondé en 2026, GREEN PITCH s'impose comme une référence sportive en Guadeloupe. Notre mission : allier performance et valeurs éducatives." data-en="Founded in 2026, GREEN PITCH has become a sports reference in Guadeloupe. Our mission: combine performance and educational values.">
+                        Fondé en 2026, <strong>GREEN PITCH</strong> s'impose comme une référence sportive en Guadeloupe. Notre mission : allier performance et valeurs éducatives.
+                    </p>
+                    <div class="values-grid">
+                        <div class="card">
+                            <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+                            <h2 class="lang" data-fr="Respect" data-en="Respect">Respect</h2>
+                            <p class="lang" data-fr="Fair-play envers les adversaires, les arbitres et les coéquipiers." data-en="Fair play towards opponents, referees and teammates.">
+                                Fair-play envers les adversaires, les arbitres et les coéquipiers.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-users" aria-hidden="true"></i>
+                            <h2 class="lang" data-fr="Esprit d'équipe" data-en="Team Spirit">Esprit d'équipe</h2>
+                            <p class="lang" data-fr="La force du collectif prime toujours sur l'individualité." data-en="The strength of the collective always prevails over individuality.">
+                                La force du collectif prime toujours sur l'individualité.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                            <h2 class="lang" data-fr="Formation" data-en="Training">Formation</h2>
+                            <p class="lang" data-fr="Des éducateurs diplômés pour accompagner la progression de chacun." data-en="Qualified coaches to support everyone's progress.">
+                                Des éducateurs diplômés pour accompagner la progression de chacun.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                            <h2 class="lang" data-fr="Passion" data-en="Passion">Passion</h2>
+                            <p class="lang" data-fr="Le plaisir du jeu reste au cœur de notre projet associatif." data-en="The joy of the game remains at the heart of our association.">
+                                Le plaisir du jeu reste au cœur de notre projet associatif.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE NOS ÉQUIPES -->
+        <div class="page-content" id="page-equipes">
+            <section class="section-padding" aria-labelledby="equipes-title">
+                <div class="container">
+                    <h1 id="equipes-title" class="section-title">
+                        <span class="lang" data-fr="Nos Équipes" data-en="Our Teams">Nos Équipes</span>
+                    </h1>
+                    <p class="intro-text lang" data-fr="GREEN PITCH accueille tous les niveaux et toutes les catégories d'âge dans un environnement bienveillant et structuré." data-en="GREEN PITCH welcomes all levels and age categories in a caring and structured environment.">
+                        GREEN PITCH accueille tous les niveaux et toutes les catégories d'âge dans un environnement bienveillant et structuré.
+                    </p>
+                    <div class="teams-grid">
+                        <article class="team-card">
+                            <div class="team-img" style="background-image:url('u6.jpg');" role="img" aria-label="Enfants pratiquant le sport"></div>
+                            <div class="team-content">
+                                <span class="tag lang" data-fr="École de Sport" data-en="Sports School">École de Sport</span>
+                                <h2 class="lang" data-fr="Catégories U6 à U13" data-en="Categories U6 to U13">Catégories U6 à U13</h2>
+                                <p class="lang" data-fr="L'apprentissage des bases techniques et motrices dans un environnement ludique et sécurisé." data-en="Learning technical and motor basics in a fun and safe environment.">
+                                    L'apprentissage des bases techniques et motrices dans un environnement ludique et sécurisé.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="team-card">
+                            <div class="team-img" style="background-image:url('https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');" role="img" aria-label="Jeunes en compétition sportive"></div>
+                            <div class="team-content">
+                                <span class="tag lang" data-fr="Compétition" data-en="Competition">Compétition</span>
+                                <h2 class="lang" data-fr="U14 à Séniors" data-en="U14 to Seniors">U14 à Séniors</h2>
+                                <p class="lang" data-fr="D'adolescents aux ancients tout pour s'amuser." data-en="From teenagers to seniors, everything you need to have fun.">
+                                    D'adolescents aux ancients tout pour s'amuser.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="team-card">
+                            <div class="team-img" style="background-image:url('catégorie\ feminine.jpg');" role="img" aria-label="Équipe féminine de sport"></div>
+                            <div class="team-content">
+                                <span class="tag lang" data-fr="Section Féminine" data-en="Women's Section">Section Féminine</span>
+                                <h2 class="lang" data-fr="Toutes catégories" data-en="All categories">Toutes catégories</h2>
+                                <p class="lang" data-fr="Une section dynamique en pleine expansion, ouverte aux débutantes et confirmées." data-en="A dynamic and expanding section, open to beginners and experienced players.">
+                                    Une section dynamique en pleine expansion, ouverte aux débutantes et confirmées.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="team-card">
+                            <div class="team-img" style="background-image:url('yildiz.jpeg');" role="img" aria-label="Adultes pratiquant un sport de loisir"></div>
+                            <div class="team-content">
+                                <span class="tag lang" data-fr="Sport Loisir" data-en="Leisure Sports">Sport Loisir</span>
+                                <h2 class="lang" data-fr="Adultes Loisir" data-en="Leisure Adults">Adultes Loisir</h2>
+                                <p class="lang" data-fr="Pratiquez le sport pour le plaisir, sans objectif compétitif." data-en="Practice sports for fun, without competitive goals.">
+                                    Pratiquez le sport pour le plaisir, sans objectif compétitif.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE JEUX -->
+        <div class="page-content" id="page-jeux">
+            <section class="section-padding" aria-labelledby="jeux-title">
+                <div class="container">
+                    <h1 id="jeux-title" class="section-title">
+                        <span class="lang" data-fr="Section Jeux Vidéos" data-en="Video Games Section">Section Jeux Vidéo</span>
+                    </h1>
+                    <div class="intro-box">
+                        <div class="icon"><i class="fa-solid fa-gamepad" aria-hidden="true"></i></div>
+                        <h2 class="lang" data-fr="Le Sport Virtuel : Une Alternative Accessible" data-en="Virtual Sports: An Accessible Alternative">Le Sport Virtuel : Une Alternative Accessible</h2>
+                        <p class="lang" data-fr="GREEN PITCH propose également une section dédiée aux jeux vidéo de sport ! Vivez l'excitation de la compétition." data-en="GREEN PITCH also offers a section dedicated to sports video games! Experience the excitement of competition.">
+                            GREEN PITCH propose également une section dédiée aux jeux vidéo de sport ! Vivez l'excitation de la compétition.
+                        </p>
+                    </div>
+
+                    <div class="games-grid">
+                        <article class="game-card">
+                            <div class="game-img" style="background-image:url('fifa.jpg');" role="img" aria-label="Image du jeu FIFA 26">
+                                <div class="game-badge lang" data-fr="Populaire" data-en="Popular">Populaire</div>
+                            </div>
+                            <div class="game-content">
+                                <div class="game-title">
+                                    <div class="game-icon"><i class="fa-solid fa-futbol" aria-hidden="true"></i></div>
+                                    <h2>EA Sports FC 26</h2>
+                                </div>
+                                <p class="lang" data-fr="Le jeu de football de référence ! Incarnez vos équipes préférées." data-en="The ultimate soccer game! Play as your favorite teams.">
+                                    Le jeu de football de référence ! Incarnez vos équipes préférées.
+                                </p>
+                                <div class="game-features">
+                                    <h3><i class="fa-solid fa-star" aria-hidden="true"></i> <span class="lang" data-fr="Caractéristiques" data-en="Features">Caractéristiques</span></h3>
+                                    <ul>
+                                        <li class="lang" data-fr="Mode Carrière ultra-réaliste" data-en="Ultra-realistic Career Mode">Mode Carrière ultra-réaliste</li>
+                                        <li>Ultimate Team</li>
+                                        <li class="lang" data-fr="Tournois en ligne" data-en="Online tournaments">Tournois en ligne</li>
+                                        <li class="lang" data-fr="700+ équipes sous licence" data-en="700+ licensed teams">700+ équipes sous licence</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="game-card">
+                            <div class="game-img" style="background-image:url('LONDON.jpg');" role="img" aria-label="Image du jeu Londres 2012">
+                                <div class="game-badge lang" data-fr="Familial" data-en="Family">Familial</div>
+                            </div>
+                            <div class="game-content">
+                                <div class="game-title">
+                                    <div class="game-icon"><i class="fa-solid fa-medal" aria-hidden="true"></i></div>
+                                    <h2 class="lang" data-fr="Londres 2012" data-en="London 2012">Londres 2012</h2>
+                                </div>
+                                <p class="lang" data-fr="Vivez l'expérience olympique officielle !" data-en="Experience the official Olympic experience!">
+                                    Vivez l'expérience olympique officielle !
+                                </p>
+                                <div class="game-features">
+                                    <h3><i class="fa-solid fa-star" aria-hidden="true"></i> <span class="lang" data-fr="Caractéristiques" data-en="Features">Caractéristiques</span></h3>
+                                    <ul>
+                                        <li class="lang" data-fr="30+ disciplines olympiques" data-en="30+ Olympic disciplines">30+ disciplines olympiques</li>
+                                        <li class="lang" data-fr="Mode multijoueur 4 joueurs" data-en="4-player multiplayer mode">Mode multijoueur 4 joueurs</li>
+                                        <li class="lang" data-fr="Athlétisme, natation" data-en="Athletics, swimming">Athlétisme, natation</li>
+                                        <li class="lang" data-fr="Graphismes réalistes" data-en="Realistic graphics">Graphismes réalistes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="game-card">
+                            <div class="game-img" style="background-image:url('Rocket-League-Season-21.jpg');" role="img" aria-label="Image du jeu Rocket League">
+                                <div class="game-badge">Action</div>
+                            </div>
+                            <div class="game-content">
+                                <div class="game-title">
+                                    <div class="game-icon"><i class="fa-solid fa-rocket" aria-hidden="true"></i></div>
+                                    <h2>Rocket League</h2>
+                                </div>
+                                <p class="lang" data-fr="Le football revisité avec des voitures acrobatiques !" data-en="Soccer reimagined with acrobatic cars!">
+                                    Le football revisité avec des voitures acrobatiques !
+                                </p>
+                                <div class="game-features">
+                                    <h3><i class="fa-solid fa-star" aria-hidden="true"></i> <span class="lang" data-fr="Caractéristiques" data-en="Features">Caractéristiques</span></h3>
+                                    <ul>
+                                        <li class="lang" data-fr="Football + voitures volantes" data-en="Soccer + flying cars">Football + voitures volantes</li>
+                                        <li class="lang" data-fr="Mode compétitif classé" data-en="Ranked competitive mode">Mode compétitif classé</li>
+                                        <li class="lang" data-fr="Mode équipe 3v3, 2v2, 1v1" data-en="Team mode 3v3, 2v2, 1v1">Mode équipe 3v3, 2v2, 1v1</li>
+                                        <li>Cross-platform</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- Vidéos pour les jeux -->
+                    <div class="video-banner">
+                        <div class="container">
+                            <div class="video-content">
+                                <div class="video-text">
+                                    <h2>
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i> 
+                                        <span class="lang" data-fr="À tous les passionnés de Rocket League" data-en="To all Rocket League enthusiasts">À tous les passionnés de Rocket League</span>
+                                    </h2>
+                                    <p class="lang" data-fr="Force à vous ! Regardez cette vidéo inspirante." data-en="Stay strong! Watch this inspiring video.">
+                                        Force à vous ! Regardez cette vidéo inspirante.
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="https://youtube.com/shorts/FXc-SSp_Rvc?si=JmefuccX-TGfekyi" target="_blank" rel="noopener noreferrer" class="video-box" aria-label="Regarder la vidéo Rocket League sur YouTube (nouvelle fenêtre)">
+                                        <div class="video-thumb">
+                                            <img src="https://img.youtube.com/vi/FXc-SSp_Rvc/maxresdefault.jpg" alt="Vignette de la vidéo Rocket League">
+                                            <div class="play-btn" aria-hidden="true"><i class="fa-brands fa-youtube"></i></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="video-banner">
+                        <div class="container">
+                            <div class="video-content">
+                                <div class="video-text">
+                                    <h2>
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i> 
+                                        <span class="lang" data-fr="Jeu Familial 100% Fair-Play" data-en="100% Fair-Play Family Game">Jeu Familial 100% Fair-Play</span>
+                                    </h2>
+                                    <p class="lang" data-fr="Ne détruit aucune amitié, n'énerve aucun humain sur terre." data-en="Doesn't destroy any friendships, doesn't annoy any human on earth.">
+                                        Ne détruit aucune amitié, n'énerve aucun humain sur terre.
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="https://youtube.com/shorts/GvuAGMD5hNI?si=RpmQuYZzD91ipKPq" target="_blank" rel="noopener noreferrer" class="video-box" aria-label="Regarder la vidéo gaming fun sur YouTube (nouvelle fenêtre)">
+                                        <div class="video-thumb">
+                                            <img src="https://img.youtube.com/vi/GvuAGMD5hNI/maxresdefault.jpg" alt="Vignette de la vidéo gaming fun">
+                                            <div class="play-btn" aria-hidden="true"><i class="fa-brands fa-youtube"></i></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE ACTUALITÉS -->
+        <div class="page-content" id="page-actualites">
+            <section class="section-padding" aria-labelledby="actualites-title">
+                <div class="container">
+                    <h1 id="actualites-title" class="section-title">
+                        <span class="lang" data-fr="Actualités" data-en="News">Actualités</span>
+                    </h1>
+                    <div class="news-grid">
+                        <article class="news-item">
+                            <time class="news-date" datetime="2026-01-06">
+                                <span class="lang" data-fr="06 Janvier 2026" data-en="January 6, 2026">06 Janvier 2026</span>
+                            </time>
+                            <h2 class="lang" data-fr="Ouverture de notre association" data-en="Opening of our association">Ouverture de notre association</h2>
+                            <p class="lang" data-fr="GREEN PITCH ouvre officiellement ses portes à Saint-Claude. Venez découvrir nos installations." data-en="GREEN PITCH officially opens its doors in Saint-Claude. Come discover our facilities.">
+                                GREEN PITCH ouvre officiellement ses portes à Saint-Claude. Venez découvrir nos installations.
+                            </p>
+                        </article>
+                        <article class="news-item">
+                            <time class="news-date" datetime="2026-01-08">
+                                <span class="lang" data-fr="08 Janvier 2026" data-en="January 8, 2026">08 Janvier 2026</span>
+                            </time>
+                            <h2 class="lang" data-fr="Stage multi-sports : Inscriptions ouvertes" data-en="Multi-sport camp: Registration open">Stage multi-sports : Inscriptions ouvertes</h2>
+                            <p class="lang" data-fr="Ouvert aux jeunes de 8 à 16 ans. Au programme : technique, tournois et activités ludiques." data-en="Open to youth aged 8 to 16. Program includes: technique, tournaments and fun activities.">
+                                Ouvert aux jeunes de 8 à 16 ans. Au programme : technique, tournois et activités ludiques.
+                            </p>
+                        </article>
+                        <article class="news-item">
+                            <time class="news-date" datetime="2026-01-15">
+                                <span class="lang" data-fr="15 Janvier 2026" data-en="January 15, 2026">15 Janvier 2026</span>
+                            </time>
+                            <h2 class="lang" data-fr="Recherche de bénévoles" data-en="Looking for volunteers">Recherche de bénévoles</h2>
+                            <p class="lang" data-fr="Le club cherche des bénévoles motivés pour aider à l'organisation des événements." data-en="The club is looking for motivated volunteers to help organize events.">
+                                Le club cherche des bénévoles motivés pour aider à l'organisation des événements.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE CONTACT -->
+        <div class="page-content" id="page-contact">
+            <section class="join-section section-padding" aria-labelledby="contact-title">
+                <div class="container">
+                    <h1 id="contact-title" class="section-title">
+                        <span class="lang" data-fr="Nous Rejoindre" data-en="Join Us">Nous Rejoindre</span>
+                    </h1>
+                    <p class="intro-text lang" data-fr="Remplissez ce formulaire pour une pré-inscription ou pour devenir bénévole." data-en="Fill out this form for pre-registration or to become a volunteer.">
+                        Remplissez ce formulaire pour une pré-inscription ou pour devenir bénévole.
+                    </p>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <span class="lang" data-fr="Nom complet" data-en="Full name">Nom complet</span> 
+                                <span class="required" aria-label="obligatoire">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-control" 
+                                required 
+                                aria-required="true"
+                                autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Email 
+                                <span class="required" aria-label="obligatoire">*</span>
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-control" 
+                                required 
+                                aria-required="true"
+                                autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">
+                                <span class="lang" data-fr="Téléphone" data-en="Phone">Téléphone</span>
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                class="form-control"
+                                autocomplete="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">
+                                <span class="lang" data-fr="Catégorie / Sujet" data-en="Category / Subject">Catégorie / Sujet</span> 
+                                <span class="required" aria-label="obligatoire">*</span>
+                            </label>
+                            <select 
+                                id="category" 
+                                name="category" 
+                                class="form-control" 
+                                required 
+                                aria-required="true">
+                                <option value=""><span class="lang" data-fr="-- Sélectionnez --" data-en="-- Select --">-- Sélectionnez --</span></option>
+                                <option value="young"><span class="lang" data-fr="Inscription Jeune" data-en="Youth Registration">Inscription Jeune</span></option>
+                                <option value="senior"><span class="lang" data-fr="Inscription Sénior" data-en="Senior Registration">Inscription Sénior</span></option>
+                                <option value="volunteer"><span class="lang" data-fr="Devenir Bénévole/Sponsor" data-en="Become Volunteer/Sponsor">Devenir Bénévole/Sponsor</span></option>
+                                <option value="other"><span class="lang" data-fr="Autre demande" data-en="Other request">Autre demande</span></option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-control" 
+                                rows="5"></textarea>
+                        </div>
+                        <p class="required-note">
+                            <span class="required">*</span> 
+                            <span class="lang" data-fr="Champs obligatoires" data-en="Required fields">Champs obligatoires</span>
+                        </p>
+                        <button type="submit" class="btn">
+                            <span class="lang" data-fr="Envoyer la demande" data-en="Send request">Envoyer la demande</span>
+                        </button>
+                    </form>
+
+                    <div class="contact-info-section">
+                        <h2 class="lang" data-fr="Nos Coordonnées" data-en="Our Contact Information">Nos Coordonnées</h2>
+                        <address class="contact-info-box">
+                            <p>
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i> 
+                                <span class="lang" data-fr="Stade Municipal, 97120 Saint-Claude, Guadeloupe" data-en="Municipal Stadium, 97120 Saint-Claude, Guadeloupe">Stade Municipal, 97120 Saint-Claude, Guadeloupe</span>
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone" aria-hidden="true"></i> 
+                                <a href="tel:+590590000000">05 90 00 00 00</a>
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i> 
+                                <a href="mailto:contact@greenpitch-guadeloupe.fr">contact@greenpitch-guadeloupe.fr</a>
+                            </p>
+                        </address>
+                    </div>
+
+                    <section aria-labelledby="sponsors-title">
+                        <h2 id="sponsors-title" class="section-title">
+                            <span class="lang" data-fr="Nos Sponsors" data-en="Our Sponsors">Nos Sponsors</span>
+                        </h2>
+                        <div class="sponsors-grid">
+                            <div class="sponsor-logo">
+                                <img src="logo-footer.png" alt="Logo Région Guadeloupe">
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="cr-guadeloupe-1.png" alt="Logo Ville de Saint-Claude">
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="Lion brand.png" alt="Logo Lion">
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="Monster.png" alt="Logo Monster Energy">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h2>GREEN PITCH</h2>
+                    <address>
+                        <p class="lang" data-fr="Stade Municipal" data-en="Municipal Stadium">Stade Municipal</p>
+                        <p>97120 Saint-Claude</p>
+                        <p>Guadeloupe</p>
+                        <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+590590000000">05 90 00 00 00</a></p>
+                        <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:contact@greenpitch-guadeloupe.fr">contact@greenpitch-guadeloupe.fr</a></p>
+                    </address>
+                </div>
+                <nav class="footer-col" aria-label="Liens secondaires">
+                    <h2 class="lang" data-fr="Liens Utiles" data-en="Useful Links">Liens Utiles</h2>
+                    <ul>
+                        <li><a href="#accueil" onclick="showPage('accueil'); return false;" class="lang" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                        <li><a href="#sports" onclick="showPage('sports'); return false;" class="lang" data-fr="Nos Sports" data-en="Our Sports">Nos Sports</a></li>
+                        <li><a href="#valeurs" onclick="showPage('valeurs'); return false;" class="lang" data-fr="Nos Valeurs" data-en="Our Values">Nos Valeurs</a></li>
+                        <li><a href="#contact" onclick="showPage('contact'); return false;" class="lang" data-fr="Contact" data-en="Contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-col">
+                    <h2 class="lang" data-fr="Suivez-nous" data-en="Follow us">Suivez-nous</h2>
+                    <div class="social-links">
+                        <a href="#" aria-label="Suivez-nous sur Facebook">
+                            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Suivez-nous sur Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Suivez-nous sur Twitter">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Suivez-nous sur YouTube">
+                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    &copy; 2026 GREEN PITCH. 
+                    <span class="lang" data-fr="Tous droits réservés." data-en="All rights reserved.">Tous droits réservés.</span>
+                    <a href="#" class="lang" data-fr="Mentions Légales" data-en="Legal Notice">Mentions Légales</a> | 
+                    <a href="#" class="lang" data-fr="Protection des données" data-en="Data Protection">Protection des données</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
